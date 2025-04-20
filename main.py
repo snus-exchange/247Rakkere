@@ -3,9 +3,12 @@ from discord.ext import commands
 import asyncio
 import yt_dlp
 import os
+from dotenv import load_dotenv
 
-TOKEN = os.getenv("MTM2MzU0MDgxNTIzNzg3ODA2MQ.G_aRpx.gPbTyYGGsR9av_GoUZmv-zlkbqcpQa62lQgAgs")
-YOUTUBE_URL = os.getenv("https://www.youtube.com/playlist?list=PLQKb4k81WenXb5Q43BdEnnB8Vly7KZHJd")  # Eksempel: https://www.youtube.com/watch?v=Ram2IidNW5A
+load_dotenv()  # Henter verdier fra .env-filen
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+YOUTUBE_URL = os.getenv("YOUTUBE_URL")
 
 intents = discord.Intents.default()
 intents.message_content = True
