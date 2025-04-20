@@ -5,7 +5,7 @@ import yt_dlp
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Henter verdier fra .env-filen
+load_dotenv()  # Henter verdier fra .env-filenkk
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 YOUTUBE_URL = os.getenv("YOUTUBE_URL")
